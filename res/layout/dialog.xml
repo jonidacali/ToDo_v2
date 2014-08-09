@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#40ffffff"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/lbl_edit_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTaskItem"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="28dp"
+        android:text="@string/edit_label"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTaskItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbl_edit_task"
+        android:layout_centerHorizontal="true"
+        android:ems="10" />
+
+    <DatePicker
+        android:id="@+id/date"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_alignLeft="@+id/editPriority"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="52dp"
+        android:calendarViewShown="false"
+        android:startYear="2014" />
+
+    <ToggleButton
+        android:id="@+id/togglePriority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editPriority"
+        android:layout_alignBottom="@+id/editPriority"
+        android:layout_marginLeft="44dp"
+        android:layout_toRightOf="@+id/editPriority"
+        android:text="@string/priority" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/date"
+        android:layout_alignTop="@+id/date"
+        android:text="@string/dateLabel"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/editPriority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTaskItem"
+        android:layout_below="@+id/editTaskItem"
+        android:layout_marginTop="36dp"
+        android:text="@string/priority"
+        android:textSize="20sp" />
+
+</RelativeLayout>
